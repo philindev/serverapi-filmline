@@ -1,3 +1,8 @@
+# Statics
+.idea
+bot/.idea
+server/.idea
+
 # Logs
 logs
 *.log

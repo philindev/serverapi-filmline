@@ -1,10 +1,17 @@
 import React, {Component} from "react";
+import {Container} from "react-bootstrap";
+import Header from "./Header";
+import Main from "./Main";
+import Footer from "./Foot";
 
-export default class App  extends Component{
+export default class App extends Component{
 	constructor(props){
 		super(props);
 		this.state = {
 			films: null,
+			login: null,
+
+			error: null,
 		};
 
 		this.GetFilms = this.GetFilms.bind(this);
@@ -30,13 +37,19 @@ export default class App  extends Component{
 					main.setState({films: data});
 			  })
 			  .catch((error) => {
-			    	console.log('error: ', error);
+			    	main.setState({error: "Error"});
 			  })
 	}
 
 	render() {
-		return(
-			<h2>All works!</h2>
-		);
+		let app =
+			<Container>
+				<Header status={this.state.login} />
+				<Main />
+				<Footer />
+
+			</Container>;
+
+		return(app);
 	}
 };
