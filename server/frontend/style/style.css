@@ -1,0 +1,16 @@
+#login {
+    border-radius: 4px;
+    border-color: dodgerblue;
+    border-width: 1px;
+    color: dodgerblue;
+    background: #343a40;
+    height: 38px;
+    width: 50px;
+
+    transition: border-color .2s linear;
+}
+
+#login:hover {
+    color:ghostwhite;
+    border-color: ghostwhite
+}
