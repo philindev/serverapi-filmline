@@ -6,11 +6,15 @@
     background: #343a40;
     height: 38px;
     width: 50px;
-
     transition: border-color .2s linear;
 }
 
 #login:hover {
     color:ghostwhite;
     border-color: ghostwhite
+}
+
+/*Wrap content*/
+.wrapper {
+    padding-bottom : 50px;
 }

@@ -46,8 +46,9 @@ export default class App extends Component{
 			<Container>
 				<Header status={this.state.login} />
 				<Main />
-				<Footer />
-
+				<div className="wrapper">
+					<Footer />
+				</div>
 			</Container>;
 
 		return(app);

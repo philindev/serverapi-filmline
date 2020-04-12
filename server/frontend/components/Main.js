@@ -1,12 +1,21 @@
 import React, {Component} from "react";
+import {Row, Col} from "react-bootstrap";
+import Info from "./Info";
 
 export default class Main extends Component{
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            data: this.props.data
+        };
+    }
+
+    componentWillReceiveProps(nextProps, nextContext) {
+        this.setState({data: nextProps.data})
     }
 
     render() {
-        return(<h1>Main</h1>);
+        let app = null;
+        return(app);
     }
 }
