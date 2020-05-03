@@ -14,6 +14,44 @@
     border-color: ghostwhite
 }
 
+/* Absolute */
+img {
+    margin: 0;
+    padding: 0;
+}
+
+/*Main Block*/
+.main {
+    width: 100%;
+    height: 100vh;
+    margin-left: 15px;
+    display: flex;
+}
+
+.main__poster {
+    margin-top: 10%;
+    width: 100%;
+    height: 40%;
+    padding-left: 5%;
+}
+
+.main__buttons {
+    margin-top: 2%;
+    width: 100%;
+    height: 50px;
+    padding-left: 8%;
+}
+
+/*.main__carousel {*/
+/*    height: 563px;*/
+/*    position: relative;*/
+/*    align-content: center;*/
+/*}*/
+
+/*.carousel-item img {*/
+/*    height: 800px;*/
+/*}*/
+
 /*Wrap content*/
 .wrapper {
     padding-bottom : 50px;
