@@ -8,7 +8,7 @@ export default class App extends Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			films: null,
+			data: null,
 			login: null,
 
 			error: null,
@@ -45,7 +45,7 @@ export default class App extends Component{
 		let app =
 			<Container>
 				<Header status={this.state.login} />
-				<Main />
+				<Main data={this.state.data}/>
 				<div className="wrapper">
 					<Footer />
 				</div>

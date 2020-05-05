@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from json import dumps
 import sys
+from .database.database import Table
 
 app = Flask(__name__, template_folder="./frontend", static_folder="./frontend")
 
@@ -16,7 +17,12 @@ def log():
 @app.route("/maintain_films", methods=["GET", "PUT", "POST", "DELETE"])
 def films_back():
     if request.method == "GET":
-        data = [{"response": "All works!"}]
+        data = {
+            "posters": list(),
+            "films": list(),
+        }
+
+
         return dumps(data)
 
 
